@@ -1,6 +1,8 @@
 package etu2076.framework.servlet;
+import etu2076.framework.*;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.HashMap;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -24,5 +26,7 @@ public class FrontServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
        processRequest(req,resp);
     }
+    
+    HashMap<String,Mapping>MappingUrls;
 }
 
